@@ -2,7 +2,7 @@
 
 ## Background
 
-The purpose of this demo is to demonstrate the Dataflow’s streaming capability. It references news data provides by News API and feeds the unbounded data to Big Query table. 
+The purpose of this demo is to demonstrate the Dataflow’s streaming capability. It references news data provides by News API and feeds the unbounded data to Big Query table. Any error that occurs upstream (i.e. from accessing the API or the cloud function) or within the dataflow pipeline itself will be collected in a seperated table.
 
 ### News API
 
@@ -11,10 +11,16 @@ News API is a simple and easy-to-use API that returns JSON metadata for headline
 For more details about News API, please reference https://newsapi.org/
 
 ## Google Cloud Services Utilized
-1.	Cloud Scheduler
-2.	Cloud Function
-3.	Cloud Pub/Sub
-4.	Cloud Dataflow
-5.	Cloud BigQuery
-6.	Cloud Storage
-7.	Cloud Identity and Access Management (IAM)
+--* Cloud Scheduler
+--*	Cloud Function
+--* Cloud Pub/Sub
+--*	Cloud Dataflow
+--*	Cloud BigQuery
+--*	Cloud Storage
+--*	Cloud Identity and Access Management (IAM)
+
+## Architecture
+
+The entire streaming architecture is decoupled into two main segmenets.  The Cloud Function [LINK TO REPO] handles the News API call and parses the nested response into the Pub/Sub.  The Datflow ingests 
+
+![alt text](https://github.com/vthurai/streaming-dataflow-demo/tree/master/src/main/resources/images/Streaming-Dataflow-Demo.jpg "Streaming-Demo-Architecture")
