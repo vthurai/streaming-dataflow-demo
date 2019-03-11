@@ -11,13 +11,13 @@ News API is a simple and easy-to-use API that returns JSON metadata for headline
 For more details about News API, please reference https://newsapi.org/
 
 ## Google Cloud Services Utilized
---* Cloud Scheduler
---*	Cloud Function
---* Cloud Pub/Sub
---*	Cloud Dataflow
---*	Cloud BigQuery
---*	Cloud Storage
---*	Cloud Identity and Access Management (IAM)
+* Cloud Scheduler
+* Cloud Function
+* Cloud Pub/Sub
+* Cloud Dataflow
+* Cloud BigQuery
+* Cloud Storage
+* Cloud Identity and Access Management (IAM)
 
 ## Architecture
 
