@@ -23,4 +23,4 @@ For more details about News API, please reference https://newsapi.org/
 
 The entire streaming architecture is decoupled into two main segmenets.  The Cloud Function [LINK TO REPO] handles the News API call and parses the nested response into the Pub/Sub.  The Datflow ingests 
 
-![alt text](https://github.com/vthurai/streaming-dataflow-demo/tree/master/src/main/resources/images/Streaming-Dataflow-Demo.jpg "Streaming-Demo-Architecture")
+![alt text](src/main/resources/images/Streaming-Dataflow-Demo.jpg)
